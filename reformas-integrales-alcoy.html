@@ -23,22 +23,24 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Reformas Integrales de Viviendas en Alcoy",
-    "provider": {
-      "@type": ["GeneralContractor", "LocalBusiness"],
-      "name": "Reformas Bañuls",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Carrer Murillo, 41",
-        "addressLocality": "Alcoi",
-        "postalCode": "03802",
-        "addressRegion": "Alicante",
-        "addressCountry": "ES"
-      },
-      "telephone": "+34601281313"
-    },
-    "areaServed": [
+    "@graph": [
+      {
+        "@type": "Service",
+        "name": "Reformas Integrales de Viviendas en Alcoy",
+        "provider": {
+          "@type": ["GeneralContractor", "LocalBusiness"],
+          "name": "Reformas Bañuls",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Carrer Murillo, 41",
+            "addressLocality": "Alcoi",
+            "postalCode": "03802",
+            "addressRegion": "Alicante",
+            "addressCountry": "ES"
+          },
+          "telephone": "+34601281313"
+        },
+        "areaServed": [
           {"@type": "City", "name": "Alcoy"},
           {"@type": "City", "name": "Cocentaina"},
           {"@type": "City", "name": "Muro de Alcoy"},
@@ -50,7 +52,39 @@
           {"@type": "City", "name": "Planes"},
           {"@type": "City", "name": "Benilloba"}
         ],
-    "description": "Rehabilitación completa de pisos, coordinación de albañilería, fontanería, electricidad, suelos y carpintería."
+        "description": "Rehabilitación completa de pisos, coordinación de albañilería, fontanería, electricidad, suelos y carpintería."
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://xn--reformasbauls-rkb.com/reformas-integrales-alcoy.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta una reforma integral en Alcoy por m²?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El precio promedio suele rondar entre 400 € y 850 € por m², condicionado por las demoliciones, renovación completa de fontanería, electricidad y calidad de solados y carpinterías. Entregamos presupuesto cerrado desglosado en 48h tras visita gratuita."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto dura una reforma integral en Alcoy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Una reforma integral de piso suele completarse entre 6 y 10 semanas de obra continuada. La fecha exacta se estipula contractualmente antes del inicio de los trabajos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Incluye la tramitación de permisos y licencias?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Gestionamos directamente la licencia o comunicación previa con el Ayuntamiento de Alcoy o municipios vecinos y la gestión reglada de cubas de escombros."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
   <script src="js/analytics.js" defer></script>
@@ -136,6 +170,48 @@
             <h3>Garantía de Sede Física en Murillo 41</h3>
             <p>No somos intermediarios que desaparecen. Estamos a pie de calle en Alcoy para resolver cualquier ajuste o duda durante y después de la obra.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ INTEGRALES -->
+    <section class="section" id="faq">
+      <div class="container" style="max-width: 820px; margin: 0 auto;">
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <h2>Preguntas Frecuentes sobre Reformas Integrales en Alcoy</h2>
+          <p class="text-lead">Resolvemos tus dudas sobre presupuestos, plazos de obra y licencias municipales:</p>
+        </div>
+
+        <div class="faq-accordion">
+          <details class="faq-item" open>
+            <summary class="faq-summary">
+              ¿Cuánto cuesta una reforma integral en Alcoy por m²?
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-content">
+              El precio medio de una reforma integral de vivienda en Alcoy se sitúa habitualmente entre <strong>400 € y 850 € por metro cuadrado</strong>. Este importe depende del estado previo de las instalaciones, redistribución de tabiques, cocina y baños y gama de calidades. En Reformas Bañuls realizamos la visita de medición gratis y redactamos un <strong>presupuesto cerrado desglosado en 48 horas</strong>.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">
+              ¿Cuánto tiempo dura la reforma integral de un piso?
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-content">
+              Para una vivienda tipo de 80 a 110 m², el plazo suele oscilar entre <strong>6 y 10 semanas de obra continuada</strong>. Todos los plazos quedan garantizados y fijados contractualmente antes de empezar.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">
+              ¿Os ocupáis de los permisos de obra del Ayuntamiento de Alcoy?
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-content">
+              Sí, tramitamos la comunicación previa, licencia municipal de obra menor y la reserva de espacio para cubas de escombros homologadas, liberándote de trámites burocráticos.
+            </div>
+          </details>
         </div>
       </div>
     </section>
