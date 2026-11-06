@@ -1309,6 +1309,23 @@ p {
   letter-spacing: 2px;
 }
 
+.star-half {
+  position: relative;
+  display: inline-block;
+  color: #CBD5E1;
+  letter-spacing: 0;
+}
+
+.star-half::after {
+  content: '★';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  overflow: hidden;
+  color: #F59E0B;
+}
+
 .google-reviews-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
