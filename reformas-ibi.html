@@ -37,6 +37,23 @@
   {
     "@context": "https://schema.org",
     "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Inicio",
+              "item": "https://xn--reformasbauls-rkb.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Reformas en Ibi",
+              "item": "https://xn--reformasbauls-rkb.com/reformas-ibi.html"
+            }
+          ]
+        },
       {
         "@type": ["GeneralContractor", "HomeAndConstructionBusiness", "LocalBusiness"],
         "@id": "https://xn--reformasbauls-rkb.com/reformas-ibi.html#organization",
@@ -59,6 +76,32 @@
           {"@type": "AdministrativeArea", "name": "L'Alcoià"},
           {"@type": "AdministrativeArea", "name": "El Comtat"}
         ],
+        "priceRange": "€€",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 38.6946,
+          "longitude": -0.4789
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "14:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "16:30",
+            "closes": "20:00"
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "18",
+          "bestRating": "5"
+        },
         "sameAs": [
           "https://share.google/EFxHTu7dtLrR4XIMK",
           "https://www.instagram.com/proyectos.banuls/"
@@ -475,9 +518,9 @@
 
         <div style="max-width: 880px; margin: 0 auto;">
           <div class="ba-slider-container">
-            <img src="assets/img/reforma-bano.jpg" alt="Después: Reforma impecable con mampara y porcelánico" class="ba-image-before">
+            <img src="assets/img/reforma-bano.jpg" alt="Después: Reforma impecable con mampara y porcelánico" class="ba-image-before" width="700" height="460" loading="lazy">
             <div class="ba-image-after">
-              <img src="assets/img/antes-bano.jpg" alt="Antes: Baño anticuado con bañera">
+              <img src="assets/img/antes-bano.jpg" alt="Antes: Baño anticuado con bañera" width="700" height="460" loading="lazy">
             </div>
             <div class="ba-slider-handle"></div>
           </div>
