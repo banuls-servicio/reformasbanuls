@@ -18,8 +18,8 @@ const realProjects = [
     afterImg: 'assets/img/ba-bano-despues.jpg',
     duration: '5 días',
     budget: 'Llave en mano',
-    quote: '“Un cambio total. La mampara ajusta al milímetro y no se escapa una gota de agua. Limpios, puntuales y serios.”',
-    author: 'Elena M. (Santa Rosa, Alcoy)'
+    quote: '“Me he reformado el aseo!! He quedado súper contenta, cuánto tiempo buscando presupuestos y no había encontrado a nadie tan profesional como el tubito.”',
+    author: '<a href="https://www.google.com/maps/contrib/113406489948041950500/reviews?hl=es" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">Alicia Vilaplana</a> (Reseña 5★ en Google Maps)'
   },
   {
     id: 'cocina-ensanche',
@@ -115,8 +115,8 @@ function renderProject(index) {
   if (descEl) descEl.textContent = proj.desc;
   if (durationEl) durationEl.textContent = proj.duration;
   if (budgetEl) budgetEl.textContent = proj.budget;
-  if (quoteEl) quoteEl.textContent = proj.quote;
-  if (authorEl) authorEl.textContent = proj.author;
+  if (quoteEl) quoteEl.innerHTML = proj.quote;
+  if (authorEl) authorEl.innerHTML = proj.author;
 
   // Images with fade
   if (beforeImgEl && afterImgEl) {
